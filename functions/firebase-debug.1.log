@@ -1,0 +1,31 @@
+[debug] [2024-01-07T23:02:28.639Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T23:02:28.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2024-01-07T23:02:28.644Z] CLI Version:   13.0.2
+[debug] [2024-01-07T23:02:28.645Z] Platform:      win32
+[debug] [2024-01-07T23:02:28.645Z] Node Version:  v18.17.1
+[debug] [2024-01-07T23:02:28.647Z] Time:          Sun Jan 07 2024 23:02:28 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-01-07T23:02:28.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T23:02:28.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T23:02:28.849Z] > authorizing via signed-in user (edwardyambasu711@gmail.com)
+[debug] [2024-01-07T23:02:28.849Z] [iam] checking project sports-up-82322 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-01-07T23:02:28.854Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions [none]
+[debug] [2024-01-07T23:02:28.854Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions x-goog-quota-user=projects/sports-up-82322
+[debug] [2024-01-07T23:02:28.855Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-01-07T23:02:35.113Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions 200
+[debug] [2024-01-07T23:02:35.114Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-01-07T23:02:35.114Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/sports-up-82322/serviceAccounts/sports-up-82322@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-01-07T23:02:35.115Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/sports-up-82322/serviceAccounts/sports-up-82322@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-01-07T23:02:47.781Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/sports-up-82322/serviceAccounts/sports-up-82322@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-01-07T23:02:47.783Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/sports-up-82322/serviceAccounts/sports-up-82322@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'sports-up-82322'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[debug] [2024-01-07T23:03:08.924Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:258:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.

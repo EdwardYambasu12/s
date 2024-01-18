@@ -1,0 +1,1025 @@
+[debug] [2024-01-07T22:32:07.192Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T22:32:07.196Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-01-07T22:32:07.197Z] CLI Version:   13.0.2
+[debug] [2024-01-07T22:32:07.198Z] Platform:      win32
+[debug] [2024-01-07T22:32:07.198Z] Node Version:  v18.17.1
+[debug] [2024-01-07T22:32:07.200Z] Time:          Sun Jan 07 2024 22:32:07 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-01-07T22:32:07.200Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T22:32:07.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T22:32:07.472Z] > authorizing via signed-in user (edwardyambasu711@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-01-07T22:32:07.494Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-07T22:32:07.495Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-01-07T22:32:07.523Z] [hub] writing locator at C:\Users\EdwardY\AppData\Local\Temp\hub-sports-up-82322.json
+[debug] [2024-01-07T22:32:07.574Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-07T22:32:07.575Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-07T22:32:07.575Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-01-07T22:32:07.582Z] defaultcredentials: writing to file C:\Users\EdwardY\AppData\Roaming\firebase\edwardyambasu711_gmail_com_application_default_credentials.json
+[debug] [2024-01-07T22:32:07.587Z] Setting GAC to C:\Users\EdwardY\AppData\Roaming\firebase\edwardyambasu711_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\EdwardY\\AppData\\Roaming\\firebase\\edwardyambasu711_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-07T22:32:07.592Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig [none]
+[debug] [2024-01-07T22:32:13.805Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig 200
+[debug] [2024-01-07T22:32:13.806Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig {"projectId":"sports-up-82322","storageBucket":"sports-up-82322.appspot.com"}
+[debug] [2024-01-07T22:32:13.909Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-01-07T22:32:13.910Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-01-07T22:32:13.910Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\EdwardY\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\EdwardY\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-01-07T22:32:14.427Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-01-07T22:32:14.428Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\" for Cloud Functions..."}}
+[debug] [2024-01-07T22:32:14.480Z] Validating nodejs source
+[debug] [2024-01-07T22:32:19.852Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:32:19.853Z] Building nodejs source
+[debug] [2024-01-07T22:32:19.854Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:32:19.862Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:32:19.876Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8043
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-01-07T22:35:55.332Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:35:56.344Z] Validating nodejs source
+[debug] [2024-01-07T22:36:04.970Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:36:04.971Z] Building nodejs source
+[debug] [2024-01-07T22:36:04.972Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:36:04.978Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:36:04.993Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8847
+
+[error] Error: Cannot find module 'firebase-admin '
+Require stack:
+- C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js
+- C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at Object.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js:4:24)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Module._load (node:internal/modules/cjs/loader:960:12)
+    at Module.require (node:internal/modules/cjs/loader:1143:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js',
+    'C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-01-07T22:36:41.357Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:36:42.373Z] Validating nodejs source
+[debug] [2024-01-07T22:36:52.123Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:36:52.124Z] Building nodejs source
+[debug] [2024-01-07T22:36:52.124Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:36:52.126Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:36:52.135Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8625
+
+[debug] [2024-01-07T22:36:53.610Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-01-07T22:43:55.247Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:43:56.256Z] Validating nodejs source
+[debug] [2024-01-07T22:44:06.419Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2024-01-07T22:44:06.446Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:44:06.447Z] Building nodejs source
+[debug] [2024-01-07T22:44:06.447Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:44:06.451Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:44:06.466Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-01-07T22:44:06.481Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:44:07.483Z] Validating nodejs source
+[debug] [2024-01-07T22:44:12.670Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:44:12.671Z] Building nodejs source
+[debug] [2024-01-07T22:44:12.671Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:44:12.677Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:44:12.689Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8435
+
+[info] Serving at port 8258
+
+[debug] [2024-01-07T22:44:17.812Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/sports-up-82322/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/sports-up-82322/us-central1/app)."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-01-07T22:45:17.106Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:17.105Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:45:17.107Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:17.105Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:45:17.108Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:45:17.141Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:45:17.238Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:45:17.353Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:45:17.364Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2024-01-07T22:45:23.027Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:23.027Z"],"queueLength":1,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:17.105Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:45:23.028Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:17.105Z","/sports-up-82322/us-central1/app-2024-01-07T22:45:23.027Z"],"workRunningCount":2}
+[debug] [2024-01-07T22:45:23.028Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:45:23.033Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:45:23.034Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:45:23.046Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:45:23.047Z] [worker-pool] Adding worker with key us-central1-app, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=2"}}
+[debug] [2024-01-07T22:45:36.932Z] [runtime-status] [13240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:36.933Z] [runtime-status] [13416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:36.934Z] [runtime-status] [13416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:36.936Z] [runtime-status] [13240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:36.936Z] [runtime-status] [13416] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:45:36.937Z] [runtime-status] [13240] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:45:36.939Z] [runtime-status] [13416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:36.942Z] [runtime-status] [13240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.253Z] [runtime-status] [13240] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:45:38.255Z] [runtime-status] [13240] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:45:38.266Z] [runtime-status] [13240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.271Z] [runtime-status] [13240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.304Z] [runtime-status] [13416] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:45:38.306Z] [runtime-status] [13416] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:45:38.312Z] [runtime-status] [13416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.320Z] [runtime-status] [13416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.355Z] [runtime-status] [13416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.356Z] [runtime-status] [13240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:45:38.362Z] [runtime-status] [13240] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:45:38.363Z] [runtime-status] [13416] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:45:38.880Z] [runtime-status] [13416] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:45:38.881Z] [runtime-status] [13240] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:45:38.881Z] [runtime-status] [13240] Listening to port: \\?\pipe\fire_emu_8f898fab3cd4d96d {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13240] Listening to port: \\\\?\\pipe\\fire_emu_8f898fab3cd4d96d"}}
+[debug] [2024-01-07T22:45:38.882Z] [runtime-status] [13416] Listening to port: \\?\pipe\fire_emu_1c5d41d34f2e8c49 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13416] Listening to port: \\\\?\\pipe\\fire_emu_1c5d41d34f2e8c49"}}
+[debug] [2024-01-07T22:45:39.003Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:45:39.004Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:45:39.009Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:45:39.015Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: IDLE"}}
+[debug] [2024-01-07T22:45:39.015Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:45:39.023Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: BUSY"}}
+[debug] [2024-01-07T22:45:39.037Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 29.1495ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 29.1495ms"}}
+[debug] [2024-01-07T22:45:39.040Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:45:39.042Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:45:39.043Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:45:23.027Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:45:39.049Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 26.4433ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 26.4433ms"}}
+[debug] [2024-01-07T22:45:39.053Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: IDLE"}}
+[debug] [2024-01-07T22:45:39.054Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:45:39.056Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:45:39.057Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:32.853Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:32.852Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:32.853Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:32.852Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:48:32.854Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:48:32.865Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:48:32.866Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:48:32.866Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:48:32.867Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:48:32.877Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 10.4505ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 10.4505ms"}}
+[debug] [2024-01-07T22:48:32.879Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:48:32.880Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:48:32.880Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:48:32.880Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:33.839Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:33.838Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:33.839Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:33.838Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:48:33.839Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:48:33.845Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:48:33.846Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:48:33.846Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:48:33.849Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:48:33.857Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 9.0252ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 9.0252ms"}}
+[debug] [2024-01-07T22:48:33.859Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:48:33.860Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:48:33.860Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:48:33.860Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:34.849Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:34.849Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:34.850Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:34.849Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:48:34.850Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:48:34.856Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:48:34.856Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:48:34.856Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:48:34.858Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:48:34.866Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.7793ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.7793ms"}}
+[debug] [2024-01-07T22:48:34.868Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:48:34.869Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:48:34.869Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:48:34.869Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:35.806Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:35.806Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:35.806Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:35.806Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:48:35.806Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:48:35.812Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:48:35.812Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:48:35.813Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:48:35.814Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:48:35.822Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.0006ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.0006ms"}}
+[debug] [2024-01-07T22:48:35.823Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:48:35.824Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:48:35.824Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:48:35.824Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:41.424Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:41.424Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:48:41.424Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:48:41.424Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:48:41.424Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:48:41.430Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:48:41.430Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:48:41.431Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:48:41.433Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:48:41.441Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 8.4408ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 8.4408ms"}}
+[debug] [2024-01-07T22:48:41.443Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:48:41.443Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:48:41.443Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:48:41.444Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:49:07.156Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:49:07.155Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:49:07.156Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:49:07.155Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:49:07.156Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:49:07.171Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:49:07.172Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:49:07.172Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:49:07.176Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: BUSY"}}
+[debug] [2024-01-07T22:49:07.194Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 18.913ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 18.913ms"}}
+[debug] [2024-01-07T22:49:07.202Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: IDLE"}}
+[debug] [2024-01-07T22:49:07.203Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:49:07.203Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:49:07.204Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:50:36.956Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:50:37.961Z] Validating nodejs source
+[debug] [2024-01-07T22:50:47.683Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:50:47.684Z] Building nodejs source
+[debug] [2024-01-07T22:50:47.684Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:50:47.686Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:50:47.702Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8467
+
+[info] 2024-01-07
+
+[info] 2024-01-08
+
+[info] 2024-01-06
+called 0
+
+[debug] [2024-01-07T22:50:56.937Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2024-01-07T22:51:07.058Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2024-01-07T22:51:07.059Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: FINISHING"}}
+[debug] [2024-01-07T22:51:07.059Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2024-01-07T22:51:07.059Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: FINISHING"}}
+[debug] [2024-01-07T22:51:07.077Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: exited"}}
+[debug] [2024-01-07T22:51:07.078Z] [worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-68e0371f-e351-49bb-9fe2-7f6ff1f07149]: FINISHED"}}
+[debug] [2024-01-07T22:51:07.078Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: exited"}}
+[debug] [2024-01-07T22:51:07.078Z] [worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-d5c60e4a-e07f-4256-a6c6-e37da81882f1]: FINISHED"}}
+[info] called 1
+
+[debug] [2024-01-07T22:51:40.579Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:51:40.580Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:51:40.581Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:51:40.607Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:51:40.608Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:51:40.609Z] [worker-pool] Cleaned up workers for us-central1-app: 2 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-app: 2 --> 0"}}
+[debug] [2024-01-07T22:51:40.656Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:51:40.658Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2024-01-07T22:51:53.582Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app/tomorrow-2024-01-07T22:51:53.582Z"],"queueLength":1,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:51:53.583Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z","/sports-up-82322/us-central1/app/tomorrow-2024-01-07T22:51:53.582Z"],"workRunningCount":2}
+[debug] [2024-01-07T22:51:53.583Z] Accepted request GET /sports-up-82322/us-central1/app/tomorrow --> us-central1-app
+[debug] [2024-01-07T22:51:53.587Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:51:53.587Z] [functions] Got req.url=/sports-up-82322/us-central1/app/tomorrow, mapping to path=/tomorrow {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app/tomorrow, mapping to path=/tomorrow"}}
+[debug] [2024-01-07T22:51:53.610Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:51:53.611Z] [worker-pool] Adding worker with key us-central1-app, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=2"}}
+[info] called 2
+
+[debug] [2024-01-07T22:52:02.654Z] [runtime-status] [2988] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:02.658Z] [runtime-status] [11616] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:02.699Z] [runtime-status] [11616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:02.700Z] [runtime-status] [2988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:02.701Z] [runtime-status] [11616] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:52:02.702Z] [runtime-status] [2988] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:52:02.705Z] [runtime-status] [11616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:02.708Z] [runtime-status] [2988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.452Z] [runtime-status] [2988] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:52:07.453Z] [runtime-status] [11616] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:52:07.454Z] [runtime-status] [11616] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:52:07.454Z] [runtime-status] [2988] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:52:07.456Z] [runtime-status] [11616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.456Z] [runtime-status] [2988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.460Z] [runtime-status] [11616] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.460Z] [runtime-status] [2988] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.510Z] [runtime-status] [11616] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.510Z] [runtime-status] [2988] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:07.511Z] [runtime-status] [2988] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:52:07.512Z] [runtime-status] [11616] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:52:08.890Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app/matches-2024-01-07T22:52:08.890Z"],"queueLength":1,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z","/sports-up-82322/us-central1/app/tomorrow-2024-01-07T22:51:53.582Z"],"workRunningCount":2}
+[debug] [2024-01-07T22:52:08.890Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:51:40.579Z","/sports-up-82322/us-central1/app/tomorrow-2024-01-07T22:51:53.582Z","/sports-up-82322/us-central1/app/matches-2024-01-07T22:52:08.890Z"],"workRunningCount":3}
+[debug] [2024-01-07T22:52:08.890Z] Accepted request GET /sports-up-82322/us-central1/app/matches --> us-central1-app
+[debug] [2024-01-07T22:52:08.895Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:52:08.896Z] [functions] Got req.url=/sports-up-82322/us-central1/app/matches, mapping to path=/matches {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app/matches, mapping to path=/matches"}}
+[debug] [2024-01-07T22:52:08.911Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:52:08.912Z] [worker-pool] Adding worker with key us-central1-app, total=3 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=3"}}
+[error] !!  functions: Failed to handle request for function us-central1-app {"metadata":{"emulator":{"name":"functions"},"message":"Failed to handle request for function us-central1-app"}}
+[error] !!  functions: Failed to start functions in C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions: FirebaseError: Failed to load function. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to start functions in C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions: FirebaseError: Failed to load function."}}
+[debug] [2024-01-07T22:52:10.725Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app/tomorrow-2024-01-07T22:51:53.582Z","/sports-up-82322/us-central1/app/matches-2024-01-07T22:52:08.890Z"],"workRunningCount":2}
+[info] >  2024-01-07 {"user":"2024-01-07","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-07"}}
+[info] >  2024-01-07 {"user":"2024-01-07","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-07"}}
+[info] >  2024-01-08 {"user":"2024-01-08","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-08"}}
+[info] >  2024-01-06 {"user":"2024-01-06","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-06"}}
+[info] >  called 0 {"user":"called 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 0"}}
+[info] >  2024-01-08 {"user":"2024-01-08","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-08"}}
+[info] >  2024-01-06 {"user":"2024-01-06","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-06"}}
+[info] >  called 0 {"user":"called 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 0"}}
+[debug] [2024-01-07T22:52:13.430Z] [runtime-status] [2988] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:52:13.432Z] [runtime-status] [11616] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:52:13.435Z] [runtime-status] [11616] Listening to port: \\?\pipe\fire_emu_854c4083bcb68f14 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [11616] Listening to port: \\\\?\\pipe\\fire_emu_854c4083bcb68f14"}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[debug] [2024-01-07T22:52:13.459Z] [runtime-status] [2988] Listening to port: \\?\pipe\fire_emu_fbe7632e743a2538 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [2988] Listening to port: \\\\?\\pipe\\fire_emu_fbe7632e743a2538"}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[debug] [2024-01-07T22:52:13.676Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE"}}
+[debug] [2024-01-07T22:52:13.678Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:52:13.680Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY"}}
+[debug] [2024-01-07T22:52:13.705Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 26.5561ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 26.5561ms"}}
+[debug] [2024-01-07T22:52:13.707Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE"}}
+[debug] [2024-01-07T22:52:13.708Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:52:13.708Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:52:13.709Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app/matches-2024-01-07T22:52:08.890Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:52:14.032Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-01-07T22:52:14.444Z] [runtime-status] [13592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:14.448Z] [runtime-status] [13592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:14.450Z] [runtime-status] [13592] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:52:14.452Z] [runtime-status] [13592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:15.241Z] [runtime-status] [13592] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:52:15.242Z] [runtime-status] [13592] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:52:15.243Z] [runtime-status] [13592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:15.246Z] [runtime-status] [13592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:15.252Z] [runtime-status] [13592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:52:15.253Z] [runtime-status] [13592] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] >  2024-01-07 {"user":"2024-01-07","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-07"}}
+[info] >  2024-01-08 {"user":"2024-01-08","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-08"}}
+[info] >  2024-01-06 {"user":"2024-01-06","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-06"}}
+[info] >  called 0 {"user":"called 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 0"}}
+[debug] [2024-01-07T22:52:15.908Z] [runtime-status] [13592] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:52:15.909Z] [runtime-status] [13592] Listening to port: \\?\pipe\fire_emu_44b25b3988c3734e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13592] Listening to port: \\\\?\\pipe\\fire_emu_44b25b3988c3734e"}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[debug] [2024-01-07T22:52:16.032Z] [worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: IDLE"}}
+[debug] [2024-01-07T22:52:16.033Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:52:16.035Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY"}}
+[debug] [2024-01-07T22:52:16.044Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 9.2267ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 9.2267ms"}}
+[debug] [2024-01-07T22:52:16.049Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE"}}
+[debug] [2024-01-07T22:52:16.049Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:52:16.050Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:52:16.050Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] called 3
+
+[info] >  called 1 {"user":"called 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 1"}}
+[info] >  called 1 {"user":"called 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 1"}}
+[info] >  called 1 {"user":"called 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 1"}}
+[info] called 4
+
+[debug] [2024-01-07T22:52:58.352Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app-2024-01-07T22:52:58.352Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:52:58.353Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app-2024-01-07T22:52:58.352Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:52:58.353Z] Accepted request GET /sports-up-82322/us-central1/app --> us-central1-app
+[debug] [2024-01-07T22:52:58.377Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:52:58.377Z] [functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app, mapping to path=/"}}
+[debug] [2024-01-07T22:52:58.378Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:52:58.379Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: BUSY"}}
+[debug] [2024-01-07T22:52:58.403Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 24.2456ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 24.2456ms"}}
+[debug] [2024-01-07T22:52:58.405Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: IDLE"}}
+[debug] [2024-01-07T22:52:58.405Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:52:58.406Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:52:58.406Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  called 2 {"user":"called 2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 2"}}
+[info] >  called 2 {"user":"called 2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 2"}}
+[info] >  called 2 {"user":"called 2","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 2"}}
+[debug] [2024-01-07T22:53:26.427Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[info] called 5
+
+[debug] [2024-01-07T22:53:27.446Z] Validating nodejs source
+[debug] [2024-01-07T22:53:37.524Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2024-01-07T22:53:37.547Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:53:37.548Z] Building nodejs source
+[debug] [2024-01-07T22:53:37.548Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:53:37.553Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:53:37.570Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8160
+
+[info] >  called 3 {"user":"called 3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 3"}}
+[info] >  called 3 {"user":"called 3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 3"}}
+[info] >  called 3 {"user":"called 3","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 3"}}
+[info] 2024-01-07
+
+[info] 2024-01-08
+2024-01-06
+called 0
+
+[info] called 6
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74
+        let json = JSON.parse(res.body)
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'body')
+    at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35)
+    at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:514:28)
+    at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12)
+    at IncomingMessage.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.17.1
+
+[info] >  called 4 {"user":"called 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 4"}}
+[info] >  called 4 {"user":"called 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 4"}}
+[info] >  called 4 {"user":"called 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 4"}}
+[error] C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74
+        let json = JSON.parse(res.body)
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'body')
+    at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35)
+    at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:514:28)
+    at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12)
+    at IncomingMessage.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.17.1
+
+[info] >  C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74 {"user":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r"}}
+[info] >          let json = JSON.parse(res.body) {"user":"        let json = JSON.parse(res.body)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m         let json = JSON.parse(res.body)\r"}}
+[info] >                                    ^ {"user":"                                  ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                                   ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  TypeError: Cannot read properties of undefined (reading 'body') {"user":"TypeError: Cannot read properties of undefined (reading 'body')\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: Cannot read properties of undefined (reading 'body')\r"}}
+[info] >      at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35) {"user":"    at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r"}}
+[info] >      at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22) {"user":"    at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r"}}
+[info] >      at Request.emit (node:events:514:28) {"user":"    at Request.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request.emit (node:events:514:28)\r"}}
+[info] >      at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12) {"user":"    at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r"}}
+[info] >      at IncomingMessage.emit (node:events:514:28) {"user":"    at IncomingMessage.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.emit (node:events:514:28)\r"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:151:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:151:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:151:8)\r"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:116:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.17.1 {"user":"Node.js v18.17.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.17.1\r"}}
+[debug] [2024-01-07T22:54:41.931Z] [worker-us-central1-app-29009758-87b6-43fd-8e69-eec722c18381]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-29009758-87b6-43fd-8e69-eec722c18381]: exited"}}
+[debug] [2024-01-07T22:54:41.932Z] [worker-us-central1-app-29009758-87b6-43fd-8e69-eec722c18381]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-29009758-87b6-43fd-8e69-eec722c18381]: FINISHED"}}
+[info] >  C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74 {"user":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r"}}
+[info] >          let json = JSON.parse(res.body) {"user":"        let json = JSON.parse(res.body)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m         let json = JSON.parse(res.body)\r"}}
+[info] >                                    ^ {"user":"                                  ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                                   ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  TypeError: Cannot read properties of undefined (reading 'body') {"user":"TypeError: Cannot read properties of undefined (reading 'body')\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: Cannot read properties of undefined (reading 'body')\r"}}
+[info] >      at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35) {"user":"    at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r"}}
+[info] >      at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22) {"user":"    at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r"}}
+[info] >      at Request.emit (node:events:514:28) {"user":"    at Request.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request.emit (node:events:514:28)\r"}}
+[info] >      at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12) {"user":"    at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r"}}
+[info] >      at IncomingMessage.emit (node:events:514:28) {"user":"    at IncomingMessage.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.emit (node:events:514:28)\r"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:151:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:151:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:151:8)\r"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:116:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.17.1 {"user":"Node.js v18.17.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.17.1\r"}}
+[debug] [2024-01-07T22:54:42.218Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: exited"}}
+[debug] [2024-01-07T22:54:42.219Z] [worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-f95a1496-d55e-4977-8d7d-b29424b32caf]: FINISHED"}}
+[info] >  called 5 {"user":"called 5","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 5"}}
+[debug] [2024-01-07T22:54:47.140Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:54:48.017Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[info] >  C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74 {"user":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74\r"}}
+[info] >          let json = JSON.parse(res.body) {"user":"        let json = JSON.parse(res.body)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m         let json = JSON.parse(res.body)\r"}}
+[info] >                                    ^ {"user":"                                  ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                                   ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  TypeError: Cannot read properties of undefined (reading 'body') {"user":"TypeError: Cannot read properties of undefined (reading 'body')\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: Cannot read properties of undefined (reading 'body')\r"}}
+[info] >      at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35) {"user":"    at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:74:35)\r"}}
+[info] >      at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22) {"user":"    at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r"}}
+[info] >      at Request.emit (node:events:514:28) {"user":"    at Request.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request.emit (node:events:514:28)\r"}}
+[info] >      at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12) {"user":"    at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r"}}
+[info] >      at IncomingMessage.emit (node:events:514:28) {"user":"    at IncomingMessage.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.emit (node:events:514:28)\r"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:151:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:151:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:151:8)\r"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:116:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.17.1 {"user":"Node.js v18.17.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.17.1\r"}}
+[debug] [2024-01-07T22:54:48.450Z] [worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: exited"}}
+[debug] [2024-01-07T22:54:48.451Z] [worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-93be3032-468e-4857-846b-3a54638c2fb2]: FINISHED"}}
+[debug] [2024-01-07T22:54:48.767Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:54:49.225Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:54:49.709Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js changed, reloading triggers"}}
+[debug] [2024-01-07T22:54:50.726Z] Validating nodejs source
+[debug] [2024-01-07T22:54:56.479Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T22:54:56.480Z] Building nodejs source
+[debug] [2024-01-07T22:54:56.480Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T22:54:56.486Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T22:54:56.504Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8176
+
+[info] 2024-01-07
+
+[info] 2024-01-08
+2024-01-06
+called 0
+
+[debug] [2024-01-07T22:54:58.607Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2024-01-07T22:55:10.629Z] [work-queue] {"queuedWork":["/sports-up-82322/us-central1/app/yesterday-2024-01-07T22:55:10.629Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-07T22:55:10.630Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/sports-up-82322/us-central1/app/yesterday-2024-01-07T22:55:10.629Z"],"workRunningCount":1}
+[debug] [2024-01-07T22:55:10.630Z] Accepted request GET /sports-up-82322/us-central1/app/yesterday --> us-central1-app
+[debug] [2024-01-07T22:55:10.658Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-07T22:55:10.659Z] [functions] Got req.url=/sports-up-82322/us-central1/app/yesterday, mapping to path=/yesterday {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/sports-up-82322/us-central1/app/yesterday, mapping to path=/yesterday"}}
+[debug] [2024-01-07T22:55:10.659Z] [worker-pool] Cleaned up workers for us-central1-app: 3 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-app: 3 --> 0"}}
+[debug] [2024-01-07T22:55:10.688Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2024-01-07T22:55:10.690Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2024-01-07T22:55:28.571Z] [runtime-status] [6520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:55:28.574Z] [runtime-status] [6520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:55:28.576Z] [runtime-status] [6520] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-07T22:55:28.578Z] [runtime-status] [6520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[info] called 1
+
+[debug] [2024-01-07T22:55:29.220Z] [runtime-status] [6520] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-07T22:55:29.220Z] [runtime-status] [6520] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-07T22:55:29.222Z] [runtime-status] [6520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:55:29.225Z] [runtime-status] [6520] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-07T22:55:29.265Z] [runtime-status] [6520] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.6.0","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.6.0\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-07T22:55:29.265Z] [runtime-status] [6520] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] >  2024-01-07 {"user":"2024-01-07","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-07"}}
+[info] >  2024-01-08 {"user":"2024-01-08","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-08"}}
+[info] >  2024-01-06 {"user":"2024-01-06","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 2024-01-06"}}
+[info] >  called 0 {"user":"called 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 0"}}
+[debug] [2024-01-07T22:55:30.179Z] [runtime-status] [6520] Functions runtime initialized. {"cwd":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\EdwardY\\\\Desktop\\\\programming\\\\SportsUp\\\\backend\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-07T22:55:30.180Z] [runtime-status] [6520] Listening to port: \\?\pipe\fire_emu_eccfe7bdfe0608bc {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [6520] Listening to port: \\\\?\\pipe\\fire_emu_eccfe7bdfe0608bc"}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-06&to=2024-01-06&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-07&to=2024-01-07&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_events&from=2024-01-08&to=2024-01-08&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[warn] !  External network resource requested!
+   - URL: "https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d\"\n - Be careful, this may be a production service."}}
+[debug] [2024-01-07T22:55:30.289Z] [worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: IDLE"}}
+[debug] [2024-01-07T22:55:30.289Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2024-01-07T22:55:30.291Z] [worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: BUSY"}}
+[debug] [2024-01-07T22:55:30.314Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 24.202ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 24.202ms"}}
+[debug] [2024-01-07T22:55:30.316Z] [worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: IDLE"}}
+[debug] [2024-01-07T22:55:30.317Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-07T22:55:30.317Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-07T22:55:30.317Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] called 2
+
+[error] C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74
+        let json = JSON.parse(res.body)
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'body')
+    at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:74:35)
+    at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:514:28)
+    at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12)
+    at IncomingMessage.emit (node:events:514:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.17.1
+
+[info] >  called 1 {"user":"called 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m called 1"}}
+[info] >  C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:96 {"user":"C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:96\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:96\r"}}
+[info] >          let json = JSON.parse(res.body) {"user":"        let json = JSON.parse(res.body)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m         let json = JSON.parse(res.body)\r"}}
+[info] >                                    ^ {"user":"                                  ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                                   ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  TypeError: Cannot read properties of undefined (reading 'body') {"user":"TypeError: Cannot read properties of undefined (reading 'body')\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: Cannot read properties of undefined (reading 'body')\r"}}
+[info] >      at Request._callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\data.js:96:35) {"user":"    at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:96:35)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request._callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\data.js:96:35)\r"}}
+[info] >      at self.callback (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:185:22) {"user":"    at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at self.callback (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:185:22)\r"}}
+[info] >      at Request.emit (node:events:514:28) {"user":"    at Request.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Request.emit (node:events:514:28)\r"}}
+[info] >      at IncomingMessage.<anonymous> (C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\request\request.js:1079:12) {"user":"    at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.<anonymous> (C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\node_modules\\request\\request.js:1079:12)\r"}}
+[info] >      at IncomingMessage.emit (node:events:514:28) {"user":"    at IncomingMessage.emit (node:events:514:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at IncomingMessage.emit (node:events:514:28)\r"}}
+[info] >      at emitErrorNT (node:internal/streams/destroy:151:8) {"user":"    at emitErrorNT (node:internal/streams/destroy:151:8)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorNT (node:internal/streams/destroy:151:8)\r"}}
+[info] >      at emitErrorCloseNT (node:internal/streams/destroy:116:3) {"user":"    at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at emitErrorCloseNT (node:internal/streams/destroy:116:3)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.17.1 {"user":"Node.js v18.17.1\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.17.1\r"}}
+[debug] [2024-01-07T22:56:04.076Z] [worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: exited"}}
+[debug] [2024-01-07T22:56:04.077Z] [worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-004ce5dd-8532-4515-966c-ef980ebeb6bf]: FINISHED"}}
+[debug] [2024-01-07T23:00:22.908Z] ----------------------------------------------------------------------
+[debug] [2024-01-07T23:00:22.913Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdwardY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2024-01-07T23:00:22.914Z] CLI Version:   13.0.2
+[debug] [2024-01-07T23:00:22.915Z] Platform:      win32
+[debug] [2024-01-07T23:00:22.915Z] Node Version:  v18.17.1
+[debug] [2024-01-07T23:00:22.917Z] Time:          Sun Jan 07 2024 23:00:22 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-01-07T23:00:22.917Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-07T23:00:23.252Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-07T23:00:23.253Z] > authorizing via signed-in user (edwardyambasu711@gmail.com)
+[debug] [2024-01-07T23:00:23.253Z] [iam] checking project sports-up-82322 for permissions ["firebase.projects.get"]
+[debug] [2024-01-07T23:00:23.258Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions [none]
+[debug] [2024-01-07T23:00:23.259Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions x-goog-quota-user=projects/sports-up-82322
+[debug] [2024-01-07T23:00:23.259Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-07T23:00:25.721Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions 200
+[debug] [2024-01-07T23:00:25.722Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sports-up-82322:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-01-07T23:00:25.732Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2024-01-07T23:00:25.742Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2024-01-07T23:00:25.743Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":8308},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[debug] [2024-01-07T23:00:25.744Z] Running emulators:  {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":8308},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[warn] !  functions: You are already running the Cloud Functions emulator on port 5001. Running the emulator and the Functions shell simultaenously can result in unexpected behavior. 
+[debug] [2024-01-07T23:00:25.767Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-07T23:00:25.782Z] defaultcredentials: writing to file C:\Users\EdwardY\AppData\Roaming\firebase\edwardyambasu711_gmail_com_application_default_credentials.json
+[debug] [2024-01-07T23:00:25.786Z] DEBUG: Setting GAC to C:\Users\EdwardY\AppData\Roaming\firebase\edwardyambasu711_gmail_com_application_default_credentials.json
+[debug] [2024-01-07T23:00:25.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig [none]
+[debug] [2024-01-07T23:00:28.017Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig 200
+[debug] [2024-01-07T23:00:28.018Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sports-up-82322/adminSdkConfig {"projectId":"sports-up-82322","storageBucket":"sports-up-82322.appspot.com"}
+[debug] [2024-01-07T23:00:28.075Z] [functions] Watching "C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions" for Cloud Functions...
+[debug] [2024-01-07T23:00:28.089Z] Validating nodejs source
+[debug] [2024-01-07T23:00:36.456Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T23:00:36.456Z] Building nodejs source
+[debug] [2024-01-07T23:00:36.457Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T23:00:36.464Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T23:00:36.482Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8003
+
+[info] 2024-01-07
+
+[info] 2024-01-08
+2024-01-06
+called 0
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2024-01-07T23:02:13.462Z] File C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\EdwardY\\Desktop\\programming\\SportsUp\\backend\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-01-07T23:02:14.465Z] Validating nodejs source
+[debug] [2024-01-07T23:02:18.871Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-07T23:02:18.871Z] Building nodejs source
+[debug] [2024-01-07T23:02:18.871Z] Failed to find version of module node: reached end of search path C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-07T23:02:18.873Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-07T23:02:18.883Z] Found firebase-functions binary at 'C:\Users\EdwardY\Desktop\programming\SportsUp\backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8921
+
+[info] 2024-01-07
+
+[info] 2024-01-08
+2024-01-06
+called 0
+
+[debug] [2024-01-07T23:02:20.457Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] called 1
+
+[info] called 2
+

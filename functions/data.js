@@ -15,8 +15,7 @@ let previous
 let next
 let d = new Date()
 
-
-
+let api_key = "d1872d2c1145e86d9b321ed826416316b9813191e72cde2cb6b3b16206fd4aa9"
 
 const today_date = d.toISOString().split('T')[0]
 console.log(today_date)
@@ -35,7 +34,7 @@ let num = 0
 function Matches(){
     console.log("called", num++)
     const options1 = {
-        url : "https://apiv3.apifootball.com/?action=get_events&from="+yesterday+"&to="+yesterday+"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_events&from="+yesterday+"&to="+yesterday+"&APIkey="+apikey,
         mehtod : "GET",
     }
 
@@ -49,7 +48,7 @@ function Matches(){
     })
 
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_events&from="+today_date+"&to="+today_date+"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_events&from="+today_date+"&to="+today_date+"&APIkey="+api_key,
         mehtod : "GET",
     }
 
@@ -65,7 +64,7 @@ function Matches(){
 
 
     const options2 = {
-        url : "https://apiv3.apifootball.com/?action=get_events&from="+tomorrow_date+"&to="+tomorrow_date+"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_events&from="+tomorrow_date+"&to="+tomorrow_date+"&APIkey="+api_key,
         mehtod : "GET",
     }
 
@@ -87,7 +86,7 @@ Matches()
 
 function Competition(){
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_leagues&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_leagues&APIkey="+api_key,
         mehtod : "GET",
     }
 
@@ -115,7 +114,7 @@ data.get("/matches", (req, res)=>{
 //STANDINGS
 data.get("/standings/:id", (req, res)=>{
         const options = {
-        url : "https://apiv3.apifootball.com/?action=get_standings&league_id="+req.params.id+ "&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_standings&league_id="+req.params.id+ "&APIkey="+api_key,
         mehtod : "GET",
     }
 
@@ -145,7 +144,7 @@ data.get("/tomorrow", (req, res)=>{
 data.get("/players/:player_id", (req, res)=>{
     console.log(req.params.player_id)
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_players&player_id="+req.params.player_id+"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_players&player_id="+req.params.player_id+ "&APIkey="+api_key,
         mehtod : "GET",
     }
     console.log(options.url)
@@ -161,7 +160,7 @@ data.get("/players/:player_id", (req, res)=>{
 data.get("/calendar/:date", (req, res)=>{
    
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_events&from="+req.params.date+"&to="+yesterday+"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : "https://apiv3.apifootball.com/?action=get_events&from="+req.params.date+"&to="+yesterday+ "&APIkey="+api_key,
         mehtod : "GET",
     }
     console.log(options.url)
@@ -179,7 +178,42 @@ data.get("/calendar/:date", (req, res)=>{
 data.get("/h2h/:hometeam/:awayteam", (req, res)=>{
     console.log(req.params)
     const options = {
-        url : " https://apiv3.apifootball.com/?action=get_H2H&firstTeamId= "+ req.params.hometeam+"&secondTeamId="+ req.params.awayteam +"&APIkey=6d6432265f60f4918073e2430f3eb06bd76d5256c9b46318c83f14c24011a65d",
+        url : " https://apiv3.apifootball.com/?action=get_H2H&firstTeamId= "+ req.params.hometeam+"&secondTeamId="+ req.params.awayteam + "&APIkey="+api_key,
+        mehtod : "GET",
+    }
+
+    request(options, (err, body)=>{
+
+        let json = JSON.parse(body.body)
+   
+        res.json(json)
+     
+    })
+
+})
+
+data.get("/live_comments/:id", (req, res)=>{
+    console.log(req.params)
+    const options = {
+        url : "https://apiv3.apifootball.com/?action=get_live_odds_commnets&league_id=" +req.params.id+"&APIkey="+api_key,
+        mehtod : "GET",
+    }
+
+    request(options, (err, body)=>{
+
+        let json = JSON.parse(body.body)
+   
+        res.json(json)
+     
+    })
+
+})
+
+
+data.get("live_matches", (req, res)=>{
+    console.log(req.params)
+    const options = {
+        url : "https://apiv3.apifootball.com/?action=get_events&match_live=1&from="+today_date+"&to="+today_date+"&APIkey="+api_key,
         mehtod : "GET",
     }
 
