@@ -134,7 +134,7 @@ data.get("/competitions", (req, res)=>{
 })
 //YESTERDAY MATCHES
 data.get("/yesterday", (req, res)=>{
-    res.send(previou)
+    res.send(previous)
 })
 //NEXT
 data.get("/tomorrow", (req, res)=>{
