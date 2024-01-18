@@ -195,7 +195,7 @@ data.get("/h2h/:hometeam/:awayteam", (req, res)=>{
 data.get("/live_comments/:id", (req, res)=>{
     console.log(req.params)
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_live_odds_commnets&league_id=" +req.params.id+"&APIkey="+api_key,
+        url : "https://apiv3.apifootball.com/?action=get_live_odds_commnets&APIkey="+api_key,
         mehtod : "GET",
     }
 
