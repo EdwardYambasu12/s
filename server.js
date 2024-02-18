@@ -1,13 +1,17 @@
 const express = require("express")
 const request = require("request")
-
+const router = require("./database")
 const cors = require("cors")
-const data = require("./data")
+
+
 const app = express()
 app.use(cors())
-app.use(data)
+app.use(router)
 
 
+
+
+app.use(express.urlencoded({extended : false}))
 
 
 

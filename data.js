@@ -6,16 +6,16 @@ const ids = require("./list_of_leagues")
 //Variables
 
 let list_of_matches 
-let standings = []
+let standings = [] 
 let competitions = []
 let h2h = []
 let players
 const data = express.Router()
 let previous 
 let next
+let api_key = "0dda62dccc3d5743224f2b251d7eabd1d02acb9dd9ad1b731f2e8f0653f51aa1"
 let d = new Date()
 
-let api_key = "d1872d2c1145e86d9b321ed826416316b9813191e72cde2cb6b3b16206fd4aa9"
 
 const today_date = d.toISOString().split('T')[0]
 console.log(today_date)
@@ -160,7 +160,7 @@ data.get("/players/:player_id", (req, res)=>{
 data.get("/calendar/:date", (req, res)=>{
    
     const options = {
-        url : "https://apiv3.apifootball.com/?action=get_events&from="+req.params.date+"&to="+yesterday+ "&APIkey="+api_key,
+        url : "https://apiv3.apifootball.com/?action=get_events&from="+req.params.date+"&to="+req.params.date+ "&APIkey="+api_key,
         mehtod : "GET",
     }
     console.log(options.url)
