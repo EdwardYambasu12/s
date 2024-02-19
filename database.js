@@ -1,7 +1,7 @@
 const mongoose = require ("mongoose")
 const express = require("express")
 const router = express.Router()
-const bcrypt = require("bcrypt")
+
 
 const multer = require("multer")
 
@@ -142,7 +142,7 @@ router.post("/sign-in", async(req, res)=>{
     console.log(req.body.email_reader)
 
    
-	const password = await bcrypt.hash(req.body.password_reader, 8)
+	const password = req.body.password_reader
     const validator =  await model.find({email : req.body.email_reader})
 
     if (validator.length > 0){
@@ -204,9 +204,8 @@ if (search.length >= 1){
         const encrypted = search[0].password
         const raw =  password
 
-        const pass = await bcrypt.compare(raw, encrypted)
 
-        if (pass == true){
+        if (raw == encrypted){
             console.log(pass)
             console.log("User have successfully logged in")
       
@@ -237,7 +236,7 @@ if (search.length >= 1){
         )
         
         }
-        else if (pass == false){
+        else if (raw != encrypted){
             console.log("Please Check your email or password")
 
        json =     {
